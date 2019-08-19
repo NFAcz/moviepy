@@ -66,7 +66,7 @@ class FFMPEG_AudioWriter:
         if os.name == "nt":
             popen_params["creationflags"] = 0x08000000
 
-        print cmd
+        print(cmd)
         self.proc = sp.Popen(cmd, **popen_params)
 
     def write_frames(self, frames_array):

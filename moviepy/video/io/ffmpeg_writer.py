@@ -123,7 +123,7 @@ class FFMPEG_VideoWriter:
         if os.name == "nt":
             popen_params["creationflags"] = 0x08000000  # CREATE_NO_WINDOW
 
-        print cmd
+        print(cmd)
         self.proc = sp.Popen(cmd, **popen_params)
 
 
